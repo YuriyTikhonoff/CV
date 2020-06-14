@@ -1,0 +1,187 @@
+$font-dark: #7B7A78;
+$font-light: #A6A6A6;
+$bg: #8EB4E3; 
+
+
+body{
+
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    
+    height: 30%;
+    color: #376092;
+    display: flex;
+    justify-content: center;
+    font-size: 30px; 
+    .full-name{
+        margin-top: 50px;
+    }
+}
+
+
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container-header{
+    width: 1120px;
+    background-image: url("../images/header-bg-opt.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    width: 40%;
+    background-color: #B9CDE5;
+}
+
+.article{
+    background-color: #fff;
+    width: 60%;
+    color: $font-light;
+    padding: 10px;
+}
+
+.ava{
+    max-width: 100%;
+}
+.bullet{
+    color: #fff;
+    margin-top: 20px;
+    padding: 0 15px;
+
+    &__title{
+        width: 100%;
+        border-bottom: solid #fff 3px;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-size: 20px;
+    }
+
+}
+
+.article__partition-title{
+    border-bottom: solid $font-light 3px;
+}
+
+.tenure{
+    display: flex;
+    margin-bottom: 25px;
+    
+    span{
+        color: $font-dark;
+        font-weight: 600;
+    }
+
+    &__duration{
+        display: flex;
+        background-color: $bg;
+        min-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        color: #fff;
+        margin: 20px;
+        
+        p{
+            text-align: center;
+            font-size: 20px;
+            margin: auto;
+        }
+    }
+
+    &__title{
+        margin: 10px 0;
+        color: $font-dark;
+        font-weight: 700;
+    }
+
+    &__company{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__duties{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #B9CDE5; 
+    }    
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container-header{
+            width: 100%;
+            background-image: none;
+            background-color: #B9CDE5;
+            text-align: center;
+        }
+
+        .ava{
+            width: 100%;
+            margin: 0 auto;;
+        }
+
+        .header{
+            display: flex;
+            .full-name{
+                margin-top: 20px;
+                font-size: 30px;
+            }
+        }
+
+
+
+        .section{
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .bullet-title{
+            margin: 0 5px;
+        }
+
+        .article{
+            width: 100%;
+            padding: 0 10px;
+            &__partition-title{
+                margin: 10px 0;
+                font-size: 20px;
+            }
+        }
+
+        .tenure{
+            display: flex;
+            flex-direction: column;
+            padding: 0 5px;
+            &__duration{
+                margin: 0 auto;
+                min-width: 70px;
+                max-height: 70px;
+                p{
+                    max-width: 70px;
+                    font-size: 15px;
+                }
+            }
+        }
+}
