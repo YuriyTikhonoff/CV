@@ -76,6 +76,16 @@ body {
   font-size: 20px;
 }
 
+.bullet__diploma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bullet__diploma-img {
+  margin-right: 10px;
+}
+
 .article__partition-title {
   border-bottom: solid #A6A6A6 3px;
 }
@@ -129,6 +139,7 @@ body {
 @media (max-width: 650px) {
   body {
     background-color: #B9CDE5;
+    width: 100%;
   }
   .container {
     display: -webkit-box;

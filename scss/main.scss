@@ -4,14 +4,12 @@ $bg: #8EB4E3;
 
 
 body{
-
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
 }
 
-.header{
-    
+.header{  
     height: 30%;
     color: #376092;
     display: flex;
@@ -70,6 +68,12 @@ body{
     &__text{
         font-size: 20px;
     }
+    &__diploma{
+        display: flex;
+        &-img{
+            margin-right: 10px;
+        }
+    }
 
 }
 
@@ -121,7 +125,8 @@ body{
 
 @media (max-width: 650px){
     body{
-        background-color: #B9CDE5; 
+        background-color: #B9CDE5;
+        width: 100%; 
     }    
 
         .container{
